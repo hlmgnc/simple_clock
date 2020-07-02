@@ -8,8 +8,8 @@ function setDate() {
     const secondsDegrees = ((seconds /60) *360) + 90;
     secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
 
-    const mins = now.getMins()
-    const minsDegrees = ((mins / 60) * 360) + ((seconds / 60) * 6) + 90;
+    const mins = now.getMinutes()
+    const minsDegrees = (((mins / 60) * 360) + ((seconds / 60) * 6)) + 90;
     minHand.style.transform = `rotate(${minsDegrees}deg)`;    
   
     const hours = now.getHours()
